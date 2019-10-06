@@ -12,10 +12,28 @@
   justify-content: center;
   align-items: center; }
 
+.warpper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30% 70%; }
+
+#left-area {
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-top: 40px;
+  margin-left: 100px; }
+
+#right-area {
+  background-color: #F1F1F1;
+  padding: 10px; }
+
 .addmem {
-  width: 300px;
+  width: 420px;
   height: 700px;
   border-radius: 25px;
-  border: 1px solid black; }
+  border: 1px solid #C3C3C3;
+  display: block;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
