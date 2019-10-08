@@ -15,25 +15,56 @@
 .warpper {
   display: grid;
   width: 100%;
-  grid-template-columns: 30% 70%; }
+  grid-template-columns: 500px 1400px; }
 
 #left-area {
   background-color: white;
-  padding-top: 40px;
-  padding-left: 40px;
-  margin-top: 40px;
-  margin-left: 100px; }
+  padding: 40px;
+  padding: 40px;
+  margin: 50px;
+  width: 400px;
+  height: 600px;
+  border-radius: 25px;
+  border: 1px solid #C3C3C3;
+  display: flex;
+  flex-wrap: wrap; }
+
+#left-area div {
+  height: 40px;
+  margin: 0;
+  padding: 0; }
 
 #right-area {
   background-color: #F1F1F1;
-  padding: 10px; }
+  margin-left: 10px; }
 
-.addmem {
-  width: 420px;
-  height: 700px;
-  border-radius: 25px;
+input {
+  border-radius: 5px;
   border: 1px solid #C3C3C3;
-  display: block;
-  float: left; }
+  height: 40px;
+  width: 320px; }
+
+select {
+  border-radius: 5px;
+  border: 1px solid #C3C3C3;
+  height: 40px;
+  width: 320px; }
+
+textarea {
+  height: 100px;
+  width: 320px;
+  border-radius: 5px; }
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #707070; }
+
+button {
+  background-color: #2D89E6;
+  position: fixed;
+  bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

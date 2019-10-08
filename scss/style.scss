@@ -3,6 +3,7 @@ $delete-c:#FF4A4A;
 $border-c: #C3C3C3;
 $font-s:22px;
 $font-c:white;
+$border-r: 5px;
 
 *{
     box-sizing: border-box;
@@ -25,30 +26,63 @@ $font-c:white;
 .warpper{
     display: grid;
     width: 100%;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 500px 1400px;
 }
 
 #left-area{
     background-color: white;
-    padding-top: 40px;
-    padding-left: 40px;
-    margin-top: 40px;
-    margin-left: 100px;
+    padding: 40px;
+    padding: 40px;
+    margin: 50px;
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    border: 1px solid $border-c;
+    display: flex;
+    flex-wrap: wrap;
+      
+}
+
+#left-area div {
+    height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 #right-area{
     background-color: #F1F1F1;
-    padding: 10px;
+    margin-left: 10px;
 }
 
-.addmem{
-
-    width: 420px;
-    height: 700px;
-    border-radius: 25px;
+input{
+    border-radius: $border-r;
     border: 1px solid $border-c;
-    display: block;
-    float: left;
-    
+    height: 40px;
+    width: 320px;
+}
 
+select{
+    border-radius: $border-r;
+    border: 1px solid $border-c;
+    height: 40px;
+    width: 320px;
+}
+
+textarea {
+    height: 100px;
+    width: 320px;
+    border-radius: $border-r;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-s;
+    color: #707070;
+}
+ button{
+    background-color: $bcolor;
+    position: fixed;
+    bottom: 0;
 }
