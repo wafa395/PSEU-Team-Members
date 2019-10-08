@@ -40,6 +40,7 @@ $border-r: 5px;
     border: 1px solid $border-c;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
       
 }
 
@@ -69,7 +70,7 @@ select{
 }
 
 textarea {
-    height: 100px;
+    height: 70px;
     width: 320px;
     border-radius: $border-r;
 }
@@ -81,8 +82,69 @@ span{
     font-size: $font-s;
     color: #707070;
 }
+.add-index{
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+.add-index input{
+    width: 22px;
+    height: 15px; 
+}
+
+
  button{
     background-color: $bcolor;
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-radius:  0 0 25px 25px;
+    border: 1px solid $border-c;
+    color: $font-c;
+}
+
+.left_nav{
+    width : 600px;
+    height: 50px;
+    background-color: $bcolor;
+    display: flex;
+    border-radius: 0 25 25 0;
+
+}
+.right-nav {
+
+    width :100px;
+    height: 50px;
+    color: $font-c;
+    background-color: $bcolor;
+    border-radius: 50% 0% 0% 50% ;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.right-area input{
+    width: 20px;
+    height: 20px;
+}
+
+.right-area .left-nav {
+    float: left;
+}
+
+.right-area .right-nav {
+    float: right;
 }

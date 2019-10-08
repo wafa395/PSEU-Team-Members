@@ -27,7 +27,8 @@
   border-radius: 25px;
   border: 1px solid #C3C3C3;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: relative; }
 
 #left-area div {
   height: 40px;
@@ -51,7 +52,7 @@ select {
   width: 320px; }
 
 textarea {
-  height: 100px;
+  height: 70px;
   width: 320px;
   border-radius: 5px; }
 
@@ -62,9 +63,59 @@ span {
   font-size: 22px;
   color: #707070; }
 
+.add-index {
+  font-size: 10px;
+  margin-top: 30px; }
+
+.add-index input {
+  width: 22px;
+  height: 15px; }
+
 button {
   background-color: #2D89E6;
-  position: fixed;
-  bottom: 0; }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 0 0 25px 25px;
+  border: 1px solid #C3C3C3;
+  color: white; }
+
+.left_nav {
+  width: 600px;
+  height: 50px;
+  background-color: #2D89E6;
+  display: flex;
+  border-radius: 0 25 25 0; }
+
+.right-nav {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: #2D89E6;
+  border-radius: 50% 0% 0% 50%;
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  display: inline-block; }
+
+.right-area input {
+  width: 20px;
+  height: 20px; }
+
+.right-area .left-nav {
+  float: left; }
+
+.right-area .right-nav {
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */
