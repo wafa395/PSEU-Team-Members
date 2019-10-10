@@ -34,9 +34,11 @@ $border-r: 5px;
 #left-area{
     background-color: white;
     padding: 40px;
-    padding: 40px;
-    margin: 50px;
-    width: 300px;
+    padding-left: 50px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 0px;
+    width: 75%;
     height: 450px;
     border-radius: 25px;
     border: 1px solid $border-c;
@@ -62,28 +64,26 @@ input{
     border-radius: $border-r;
     border: 1px solid $border-c;
     height: 40px;
-    width: 220px;
+    width: 120%;
 }
 
 select{
     border-radius: $border-r;
     border: 1px solid $border-c;
     height: 40px;
-    width: 220px;
+    width: 100%;
 }
 
 textarea {
     height: 60px;
-    width: 220px;
+    width: 120%;
     border-radius: $border-r;
     position: relative;
     bottom: 0;
 }
 
 span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     padding-left: 40px;
     font-size: 18px;
     color: #707070;
@@ -101,7 +101,7 @@ span{
 }
 
 
- button{
+ #left-area button{
     background-color: $bcolor;
     position: absolute;
     bottom: 0;
@@ -136,7 +136,7 @@ span{
     align-items: center;
 }
 
-ul {
+.search ul {
     list-style: none;
     margin-top: 20px;
     padding-left: 40px;
@@ -148,7 +148,7 @@ ul {
     display: inline-block;
 }
 
-ul li {
+.search ul li {
     margin-top: 10px;
     display: inline-flex;
 }
@@ -169,6 +169,7 @@ ul li {
 
 .search{
 clear: both;
+width: 100%;
 }
 
 .search .left-nav {
@@ -238,6 +239,8 @@ clear: both;
 
 .info li{
     display: block;
+    margin: 10px; 
+
 }
 
 .info ul{
@@ -255,5 +258,111 @@ clear: both;
 }
 
 .info ul li p{
-width:800px;
+    width:800px;
+}
+
+.popup{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 450px;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid $border-c;
+    border-radius: 30px;
+    visibility: hidden;
+
+}
+
+.cir3{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.X{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name{
+    width: 200px;
+    height: 40px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate( -50%);
+    margin: 20px;
+
+}
+
+.mail{
+    width: 600px;
+    height: 40px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate( -50%);
+    margin-top: 20px;
+    padding-left: 0;
+
+    ul{
+        list-style: none;
+        
+
+    }
+    li{
+        margin-top: 10px;
+        display: inline-flex;
+    }
+}
+
+.information{
+    width: 700px;
+    height: 200px;
+    position: fixed;
+    top:35%;
+    left: 50%;
+    transform: translate( -50%);
+    margin: 20px;
+    overflow-wrap: break-word;
+
+}
+
+.alter{
+    width: 500px;
+    height: 60px;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate( -50%);
+    margin: 20px;
+
+    ul{
+        list-style: none;
+        display: inline-flex;
+        padding-left: 0;
+
+    }
+    
+    button{
+        width: 100px;
+        height: 40px;
+        margin: 20px;
+        font-size: 18px;
+        color: $font-c;
+        border: 1PX solid $border-c;
+        border-radius: 10PX;
+    }
+
 }
