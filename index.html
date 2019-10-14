@@ -95,7 +95,7 @@
 					<div class="del"><div class="minus"></div></div>
 					<div class="info">
 						<ul>
-							<li><h2>Faris Abu4ram</h2></li>
+							<li onclick="myFunction()"><h2>Faris Abu4ram</h2></li>
 							<li><a href="" >faris@pseu.com </a>/ Information Technology / Front-End Developer</li>
 							<li><p>There are many variations of passages of Lorem Ipsum available, but the majority have 
 								suffered alteration in some form, by injected humour, or randomised words which don't look 
@@ -155,8 +155,8 @@
 		</div>	
 	</div>
 	
-	<div class="popup">
-		<div class="cir3"><div class="X">X</div></div>
+	<div class="popup" id= "pop">
+		<div class="cir3"><div class="X" onclick="close()">X</div></div>
 
 		<div class="name"> <h1>NAME</h1></div>
 		<div class="mail">
@@ -175,12 +175,22 @@
 			<ul>
 				<li><button style="background-color: #ff4a4a">Delete</button></li>
 				<li><button style="background-color: #2D89E6 ">Save</button></li>
-				<li><button style="background-color: #484848">Cancle</button></li>
+				<li onclick="close()"><button style="background-color: #484848">Cancle</button></li>
 			</ul>
 		</div>
 	</div>
     
 </body>
+
+<script>
+	function myFunction() {
+	    document.getElementById("pop").style.visibility = "visible";
+	}
+
+	function close(){
+		document.getElementById("pop").style.visibility="hidden";
+	}
+</script>
 
 <script type="text/javascript">
 
@@ -189,7 +199,6 @@ let outname = document.getElementById("outname");
 function store(){
 let member_name = document.getElementById("name");
 localStorage.setItem("name", member_name.value); 
-var namestore = localStorage.getItem("name");
 
 
 let member_email = document.getElementById("email");
@@ -197,7 +206,7 @@ localStorage.setItem("email", member_email.value);
 var emailstore = localStorage.getItem("email");
 };
 
-//outname.innerHTML = namestore;
+outname.innerHTML = localStorage.getItem("name");
 
 /*let bio = document.getElementById("bio");
 let btn = document.getElementById("btn");

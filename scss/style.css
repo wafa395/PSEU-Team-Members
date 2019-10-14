@@ -215,6 +215,10 @@ span {
 .info ul li p {
   width: 800px; }
 
+.info ul li a:hover > .popup {
+  opacity: 1;
+  visibility: visible; }
+
 .popup {
   position: fixed;
   top: 50%;

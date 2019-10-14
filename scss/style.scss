@@ -261,6 +261,10 @@ width: 100%;
     width:800px;
 }
 
+.info ul li a:hover> .popup{
+    opacity: 1;
+    visibility: visible;
+}
 .popup{
 
     position: fixed;
